@@ -1,0 +1,96 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    color: #FFF;
+    /* photo CC https://www.flickr.com/photos/cretatus/ */
+    background: url("bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
+    flex-flow: row wrap;
+}
+
+.-full {
+    width: 100%;
+}
+
+.-full .innerContent {
+    border: none;
+}
+
+.block {
+    padding: 1rem;
+    overflow-y: scroll;
+    flex-grow: 1;
+    max-width: 33.33337%;
+}
+
+@media screen and (max-width: 768px) {
+    .block {
+        max-width: none;
+    }
+}
+
+.innerContent {
+    font-size: 1rem;
+    max-height: 700px;
+    padding: 1rem;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.linkList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.linkListItem {
+    font-size: 0;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.linkListItem a {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.linkListItem a img {
+    padding-right: 0.5rem;
+    float: left;
+    display: inline-block;
+    height: auto;
+    max-width: 50px;
+}
+
+.cp {
+    position: relative;
+    display: block;
+}
