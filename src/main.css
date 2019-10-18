@@ -80,17 +80,14 @@ h1, h3 {
     align-items: center;
     text-overflow: ellipsis;
     overflow: hidden;
-}
-
-.linkListItem a img {
-    padding-right: 0.5rem;
-    float: left;
-    display: inline-block;
-    height: auto;
-    max-width: 50px;
+    color: #FFFFFF;
 }
 
 .cp {
     position: relative;
     display: block;
+}
+
+small a {
+    color: #FFFFFF;
 }
