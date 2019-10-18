@@ -1,12 +1,14 @@
 import React from 'react';
 import './main.css';
 import { MainView } from './main';
+import { SearchView } from './search';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>Do the thing</h1>
+        <SearchView />
       </header>
       <main className='container'>
         <MainView />
