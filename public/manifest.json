@@ -4,12 +4,6 @@
   "manifest_version": 2,
   "description": "New Tab Page that Suits my workflow",
   "homepage_url": "https://moblimic.com",
-  "background": {
-    "scripts": [
-      "service-worker.js"
-    ],
-    "persistent": true
-  },
   "chrome_url_overrides": {
     "newtab": "index.html"
   },

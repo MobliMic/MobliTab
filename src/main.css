@@ -3,9 +3,8 @@
 }
 
 body {
-    color: #FFF;
-    /* photo CC https://www.flickr.com/photos/cretatus/ */
-    background: url("bg.png") no-repeat center center fixed;
+    color: #1f1f1f;
+    background: #f1f1f1;
     background-size: cover;
 }
 
@@ -89,5 +88,5 @@ h1, h3 {
 }
 
 small a {
-    color: #FFFFFF;
+    color: #1f1f1f;
 }
