@@ -5,10 +5,12 @@ export const SearchView = () => {
   // todo make this search work intuitivly e.g. search and hit enter
   return (
     <React.Fragment>
+      <label for='search'>
+        Search
+      </label>
       <input
         name="search"
         placeholder="Enter Search"
-        label="Search"
         onChange={ (e) => {
           setSearch(e.target.value);
         } }
