@@ -4,19 +4,14 @@
   "manifest_version": 2,
   "description": "New Tab Page that Suits my workflow",
   "homepage_url": "https://moblimic.com",
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  },
-  "default_locale": "en",
   "background": {
-    "page": "src/bg/background.html",
+    "scripts": [
+      "service-worker.js"
+    ],
     "persistent": true
   },
-  "options_page": "src/options_custom/index.html",
   "chrome_url_overrides": {
-    "newtab": "src/override/override.html"
+    "newtab": "index.html"
   },
   "permissions": [
     "bookmarks",
@@ -31,6 +26,7 @@
     "https://*/*"
   ],
   "omnibox": {
-    "keyword": "extensionizr"
-  }
+    "keyword": "moblitab"
+  },
+  "content_security_policy": "script-src 'self' 'sha256-KC4T4MRWNYtT5sIdN0musuo0QIBmke12fkjB0bh/kZE='; object-src 'self'"
 }

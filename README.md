@@ -7,5 +7,6 @@ Using the http://extensionizr.com/ boilerplate generator.
 ## todo
 
  - Background switcher
- - favourites settings
+ - settings
+ - RSS reader and notification
  - work out how to sync settings between devices
